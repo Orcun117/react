@@ -1,3 +1,9 @@
+
+// next.config.js (veya app/layout.tsx gibi entry dosyasına eklenebilir)
+if (process.env.PORT === "3000") {
+  throw new Error("Bu proje 3000 portunda çalıştırılamaz. Lütfen farklı bir port kullanın (örneğin 3001).");
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {

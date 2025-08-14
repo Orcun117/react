@@ -1,0 +1,11 @@
+{
+  "welcome": "Hoş geldin",
+  "subscribe": "Şimdi Abone Ol",
+  "pricing": "Fiyatlandırma",
+  "login": "Giriş Yap",
+  "signup": "Kayıt Ol",
+  "previous": "« Önceki",
+  "next": "Sonraki »",
+  "page_not_available_heading": "Sayfa kullanılamıyor.",
+  "page_not_available_body": "Lütfen dağıtım sağlayıcına NEXT_PUBLIC_WIX_CLIENT_ID adında bir ortam değişkeni ekleyin ve client ID'yi girin."
+}
