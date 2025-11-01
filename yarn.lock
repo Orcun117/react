@@ -12,6 +12,28 @@
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.2.tgz"
   integrity sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==
 
+"@emnapi/core@^1.4.3":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.6.0.tgz#517f65d1c8270d5d5aa1aad660d5acb897430dca"
+  integrity sha512-zq/ay+9fNIJJtJiZxdTnXS20PllcYMX3OE23ESc4HK/bdYu3cOWYVhsOhVnXALfU/uqJIxn5NBPd9z4v+SfoSg==
+  dependencies:
+    "@emnapi/wasi-threads" "1.1.0"
+    tslib "^2.4.0"
+
+"@emnapi/runtime@^1.4.3":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.6.0.tgz#8fe297e0090f6e89a57a1f31f1c440bdbc3c01d8"
+  integrity sha512-obtUmAHTMjll499P+D9A3axeJFlhdjOWdKUNs/U6QIGT7V5RjcUW1xToAzjvmgTSQhDbYn/NwfTRoJcQ2rNBxA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@emnapi/wasi-threads@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/wasi-threads/-/wasi-threads-1.1.0.tgz#60b2102fddc9ccb78607e4a3cf8403ea69be41bf"
+  integrity sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ==
+  dependencies:
+    tslib "^2.4.0"
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.7.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.7.0.tgz"
@@ -137,6 +159,15 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@napi-rs/wasm-runtime@^0.2.11":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz#3e78a8b96e6c33a6c517e1894efbd5385a7cb6f2"
+  integrity sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==
+  dependencies:
+    "@emnapi/core" "^1.4.3"
+    "@emnapi/runtime" "^1.4.3"
+    "@tybys/wasm-util" "^0.10.0"
+
 "@next/env@13.5.11":
   version "13.5.11"
   resolved "https://registry.npmjs.org/@next/env/-/env-13.5.11.tgz"
@@ -148,6 +179,46 @@
   integrity sha512-0qjDhes9UTSxirt/dYzrv20hs8SUhcIOvlEioj5+XucVrBHihnAk6Om7Vzk+VZ2nRE7tcShm/6lH1xSkJ3XMpg==
   dependencies:
     glob "7.1.7"
+
+"@next/swc-darwin-arm64@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.5.9.tgz#46c3a525039171ff1a83c813d7db86fb7808a9b2"
+  integrity sha512-pVyd8/1y1l5atQRvOaLOvfbmRwefxLhqQOzYo/M7FQ5eaRwA1+wuCn7t39VwEgDd7Aw1+AIWwd+MURXUeXhwDw==
+
+"@next/swc-darwin-x64@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-13.5.9.tgz#b690452e9a6ce839f8738e27e9fd1a8567dd7554"
+  integrity sha512-DwdeJqP7v8wmoyTWPbPVodTwCybBZa02xjSJ6YQFIFZFZ7dFgrieKW4Eo0GoIcOJq5+JxkQyejmI+8zwDp3pwA==
+
+"@next/swc-linux-arm64-gnu@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-13.5.9.tgz#c3e335e2da3ba932c0b2f571f0672d1aa7af33df"
+  integrity sha512-wdQsKsIsGSNdFojvjW3Ozrh8Q00+GqL3wTaMjDkQxVtRbAqfFBtrLPO0IuWChVUP2UeuQcHpVeUvu0YgOP00+g==
+
+"@next/swc-linux-arm64-musl@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-13.5.9.tgz#54600d4917bace2508725cc963eeeb3b6432889e"
+  integrity sha512-6VpS+bodQqzOeCwGxoimlRoosiWlSc0C224I7SQWJZoyJuT1ChNCo+45QQH+/GtbR/s7nhaUqmiHdzZC9TXnXA==
+
+"@next/swc-linux-x64-gnu@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.9.tgz#f869c2066f13ff2818140e0a145dfea1ea7c0333"
+  integrity sha512-XxG3yj61WDd28NA8gFASIR+2viQaYZEFQagEodhI/R49gXWnYhiflTeeEmCn7Vgnxa/OfK81h1gvhUZ66lozpw==
+
+"@next/swc-linux-x64-musl@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.5.9.tgz#09295ea60a42a1b22d927802d6e543d8a8bbb186"
+  integrity sha512-/dnscWqfO3+U8asd+Fc6dwL2l9AZDl7eKtPNKW8mKLh4Y4wOpjJiamhe8Dx+D+Oq0GYVjuW0WwjIxYWVozt2bA==
+
+"@next/swc-win32-arm64-msvc@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-13.5.9.tgz#f39e3513058d7af6e9f6b1f296bf071301217159"
+  integrity sha512-T/iPnyurOK5a4HRUcxAlss8uzoEf5h9tkd+W2dSWAfzxv8WLKlUgbfk+DH43JY3Gc2xK5URLuXrxDZ2mGfk/jw==
+
+"@next/swc-win32-ia32-msvc@13.5.9":
+  version "13.5.9"
+  resolved "https://registry.yarnpkg.com/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-13.5.9.tgz#d567f471e182efa4ea29f47f3030613dd3fc68b5"
+  integrity sha512-BLiPKJomaPrTAb7ykjA0LPcuuNMLDVK177Z1xe0nAem33+9FIayU4k/OWrtSn9SAJW/U60+1hoey5z+KCHdRLQ==
 
 "@next/swc-win32-x64-msvc@13.5.9":
   version "13.5.9"
@@ -162,7 +233,7 @@
     "@nodelib/fs.stat" "2.0.5"
     run-parallel "^1.1.9"
 
-"@nodelib/fs.stat@^2.0.2", "@nodelib/fs.stat@2.0.5":
+"@nodelib/fs.stat@2.0.5", "@nodelib/fs.stat@^2.0.2":
   version "2.0.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
   integrity sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==
@@ -197,6 +268,31 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@preact/signals-core@^1.11.0", "@preact/signals-core@^1.12.0":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@preact/signals-core/-/signals-core-1.12.1.tgz#714b489bb35d9874cc44b35706a9dc27da8d21c4"
+  integrity sha512-BwbTXpj+9QutoZLQvbttRg5x3l5468qaV2kufh+51yha1c53ep5dY4kTuZR35+3pAZxpfQerGJiQqg34ZNZ6uA==
+
+"@preact/signals-react@^3.2.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@preact/signals-react/-/signals-react-3.3.1.tgz#676c4f8b83ee42bc8f9f49539e6d505a4a064419"
+  integrity sha512-VMVDVt2zxtv/uvYBfuaAX1KJPZjpSB23ohbbCAzWAv0J0IXRxyDMSVUirxq1nY6nzeyldAAXJOykAtlVIyQ/jA==
+  dependencies:
+    "@preact/signals-core" "^1.12.0"
+    use-sync-external-store "^1.2.0"
+
+"@radix-ui/react-compose-refs@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz#a2c4c47af6337048ee78ff6dc0d090b390d2bb30"
+  integrity sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==
+
+"@radix-ui/react-slot@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-1.2.3.tgz#502d6e354fc847d4169c3bc5f189de777f68cfe1"
+  integrity sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==
+  dependencies:
+    "@radix-ui/react-compose-refs" "1.1.2"
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rtsao/scc/-/scc-1.1.0.tgz"
@@ -226,6 +322,13 @@
   dependencies:
     "@tanstack/query-core" "4.40.0"
     use-sync-external-store "^1.2.0"
+
+"@tybys/wasm-util@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@tybys/wasm-util/-/wasm-util-0.10.1.tgz#ecddd3205cf1e2d5274649ff0eedd2991ed7f414"
+  integrity sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==
+  dependencies:
+    tslib "^2.4.0"
 
 "@types/cookie@^0.5.1":
   version "0.5.4"
@@ -324,161 +427,261 @@
   resolved "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.3.0.tgz"
   integrity sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==
 
+"@unrs/resolver-binding-android-arm-eabi@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-android-arm-eabi/-/resolver-binding-android-arm-eabi-1.11.1.tgz#9f5b04503088e6a354295e8ea8fe3cb99e43af81"
+  integrity sha512-ppLRUgHVaGRWUx0R0Ut06Mjo9gBaBkg3v/8AxusGLhsIotbBLuRk51rAzqLC8gq6NyyAojEXglNjzf6R948DNw==
+
+"@unrs/resolver-binding-android-arm64@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-android-arm64/-/resolver-binding-android-arm64-1.11.1.tgz#7414885431bd7178b989aedc4d25cccb3865bc9f"
+  integrity sha512-lCxkVtb4wp1v+EoN+HjIG9cIIzPkX5OtM03pQYkG+U5O/wL53LC4QbIeazgiKqluGeVEeBlZahHalCaBvU1a2g==
+
+"@unrs/resolver-binding-darwin-arm64@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-darwin-arm64/-/resolver-binding-darwin-arm64-1.11.1.tgz#b4a8556f42171fb9c9f7bac8235045e82aa0cbdf"
+  integrity sha512-gPVA1UjRu1Y/IsB/dQEsp2V1pm44Of6+LWvbLc9SDk1c2KhhDRDBUkQCYVWe6f26uJb3fOK8saWMgtX8IrMk3g==
+
+"@unrs/resolver-binding-darwin-x64@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-darwin-x64/-/resolver-binding-darwin-x64-1.11.1.tgz#fd4d81257b13f4d1a083890a6a17c00de571f0dc"
+  integrity sha512-cFzP7rWKd3lZaCsDze07QX1SC24lO8mPty9vdP+YVa3MGdVgPmFc59317b2ioXtgCMKGiCLxJ4HQs62oz6GfRQ==
+
+"@unrs/resolver-binding-freebsd-x64@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-freebsd-x64/-/resolver-binding-freebsd-x64-1.11.1.tgz#d2513084d0f37c407757e22f32bd924a78cfd99b"
+  integrity sha512-fqtGgak3zX4DCB6PFpsH5+Kmt/8CIi4Bry4rb1ho6Av2QHTREM+47y282Uqiu3ZRF5IQioJQ5qWRV6jduA+iGw==
+
+"@unrs/resolver-binding-linux-arm-gnueabihf@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-arm-gnueabihf/-/resolver-binding-linux-arm-gnueabihf-1.11.1.tgz#844d2605d057488d77fab09705f2866b86164e0a"
+  integrity sha512-u92mvlcYtp9MRKmP+ZvMmtPN34+/3lMHlyMj7wXJDeXxuM0Vgzz0+PPJNsro1m3IZPYChIkn944wW8TYgGKFHw==
+
+"@unrs/resolver-binding-linux-arm-musleabihf@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-arm-musleabihf/-/resolver-binding-linux-arm-musleabihf-1.11.1.tgz#204892995cefb6bd1d017d52d097193bc61ddad3"
+  integrity sha512-cINaoY2z7LVCrfHkIcmvj7osTOtm6VVT16b5oQdS4beibX2SYBwgYLmqhBjA1t51CarSaBuX5YNsWLjsqfW5Cw==
+
+"@unrs/resolver-binding-linux-arm64-gnu@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-arm64-gnu/-/resolver-binding-linux-arm64-gnu-1.11.1.tgz#023eb0c3aac46066a10be7a3f362e7b34f3bdf9d"
+  integrity sha512-34gw7PjDGB9JgePJEmhEqBhWvCiiWCuXsL9hYphDF7crW7UgI05gyBAi6MF58uGcMOiOqSJ2ybEeCvHcq0BCmQ==
+
+"@unrs/resolver-binding-linux-arm64-musl@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-arm64-musl/-/resolver-binding-linux-arm64-musl-1.11.1.tgz#9e6f9abb06424e3140a60ac996139786f5d99be0"
+  integrity sha512-RyMIx6Uf53hhOtJDIamSbTskA99sPHS96wxVE/bJtePJJtpdKGXO1wY90oRdXuYOGOTuqjT8ACccMc4K6QmT3w==
+
+"@unrs/resolver-binding-linux-ppc64-gnu@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-ppc64-gnu/-/resolver-binding-linux-ppc64-gnu-1.11.1.tgz#b111417f17c9d1b02efbec8e08398f0c5527bb44"
+  integrity sha512-D8Vae74A4/a+mZH0FbOkFJL9DSK2R6TFPC9M+jCWYia/q2einCubX10pecpDiTmkJVUH+y8K3BZClycD8nCShA==
+
+"@unrs/resolver-binding-linux-riscv64-gnu@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-riscv64-gnu/-/resolver-binding-linux-riscv64-gnu-1.11.1.tgz#92ffbf02748af3e99873945c9a8a5ead01d508a9"
+  integrity sha512-frxL4OrzOWVVsOc96+V3aqTIQl1O2TjgExV4EKgRY09AJ9leZpEg8Ak9phadbuX0BA4k8U5qtvMSQQGGmaJqcQ==
+
+"@unrs/resolver-binding-linux-riscv64-musl@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-riscv64-musl/-/resolver-binding-linux-riscv64-musl-1.11.1.tgz#0bec6f1258fc390e6b305e9ff44256cb207de165"
+  integrity sha512-mJ5vuDaIZ+l/acv01sHoXfpnyrNKOk/3aDoEdLO/Xtn9HuZlDD6jKxHlkN8ZhWyLJsRBxfv9GYM2utQ1SChKew==
+
+"@unrs/resolver-binding-linux-s390x-gnu@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-s390x-gnu/-/resolver-binding-linux-s390x-gnu-1.11.1.tgz#577843a084c5952f5906770633ccfb89dac9bc94"
+  integrity sha512-kELo8ebBVtb9sA7rMe1Cph4QHreByhaZ2QEADd9NzIQsYNQpt9UkM9iqr2lhGr5afh885d/cB5QeTXSbZHTYPg==
+
+"@unrs/resolver-binding-linux-x64-gnu@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-x64-gnu/-/resolver-binding-linux-x64-gnu-1.11.1.tgz#36fb318eebdd690f6da32ac5e0499a76fa881935"
+  integrity sha512-C3ZAHugKgovV5YvAMsxhq0gtXuwESUKc5MhEtjBpLoHPLYM+iuwSj3lflFwK3DPm68660rZ7G8BMcwSro7hD5w==
+
+"@unrs/resolver-binding-linux-x64-musl@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-linux-x64-musl/-/resolver-binding-linux-x64-musl-1.11.1.tgz#bfb9af75f783f98f6a22c4244214efe4df1853d6"
+  integrity sha512-rV0YSoyhK2nZ4vEswT/QwqzqQXw5I6CjoaYMOX0TqBlWhojUf8P94mvI7nuJTeaCkkds3QE4+zS8Ko+GdXuZtA==
+
+"@unrs/resolver-binding-wasm32-wasi@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-wasm32-wasi/-/resolver-binding-wasm32-wasi-1.11.1.tgz#752c359dd875684b27429500d88226d7cc72f71d"
+  integrity sha512-5u4RkfxJm+Ng7IWgkzi3qrFOvLvQYnPBmjmZQ8+szTK/b31fQCnleNl1GgEt7nIsZRIf5PLhPwT0WM+q45x/UQ==
+  dependencies:
+    "@napi-rs/wasm-runtime" "^0.2.11"
+
+"@unrs/resolver-binding-win32-arm64-msvc@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-arm64-msvc/-/resolver-binding-win32-arm64-msvc-1.11.1.tgz#ce5735e600e4c2fbb409cd051b3b7da4a399af35"
+  integrity sha512-nRcz5Il4ln0kMhfL8S3hLkxI85BXs3o8EYoattsJNdsX4YUU89iOkVn7g0VHSRxFuVMdM4Q1jEpIId1Ihim/Uw==
+
+"@unrs/resolver-binding-win32-ia32-msvc@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-ia32-msvc/-/resolver-binding-win32-ia32-msvc-1.11.1.tgz#72fc57bc7c64ec5c3de0d64ee0d1810317bc60a6"
+  integrity sha512-DCEI6t5i1NmAZp6pFonpD5m7i6aFrpofcp4LA2i8IIq60Jyo28hamKBxNrZcyOwVOZkgsRp9O2sXWBWP8MnvIQ==
+
 "@unrs/resolver-binding-win32-x64-msvc@1.11.1":
   version "1.11.1"
   resolved "https://registry.npmjs.org/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.11.1.tgz"
   integrity sha512-lrW200hZdbfRtztbygyaq/6jP6AKE8qQN2KvPcJ+x7wiD038YtnYtZ82IMNJ69GJibV7bwL3y9FgK+5w/pYt6g==
 
-"@wix/auto_sdk_bookings_attendance@1.0.36":
-  version "1.0.36"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_attendance/-/auto_sdk_bookings_attendance-1.0.36.tgz"
-  integrity sha512-O3iQ5DtMNg95VGfOc7EWlGHbKKYNETDtB1mM2lC9GKe8xedn2olD54KktNsf+59qHkdE3cCHvE/uJU/8Elm1+Q==
+"@wix/auto_sdk_bookings_add-ons@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_add-ons/-/auto_sdk_bookings_add-ons-1.0.5.tgz#e25f3ca6f634449f052ca7f2048ef389f7645d01"
+  integrity sha512-1n//P8ZAv6reJpfWx+Su43ODLL3axAomUYSC61TsyjOYcOFvvPB5UyoREAs2Pzpz1nxGWKTh2aT4DtxhqFjM7A==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_availability-calendar@1.0.166":
-  version "1.0.166"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_availability-calendar/-/auto_sdk_bookings_availability-calendar-1.0.166.tgz"
-  integrity sha512-Km/OvHuGhljo50aZslLYNlFm1Oh7tXihof10fLILjjTiQ+mLfYMX77IQzwGpaWp8jTqIx9TkfXFntj7lniWLAA==
+"@wix/auto_sdk_bookings_attendance@1.0.39":
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_attendance/-/auto_sdk_bookings_attendance-1.0.39.tgz#3a662f3433b0102356591f1d73a33a4ef259dde0"
+  integrity sha512-i4M0zV9sChs3ehR0RoOWBPSOo/z0sxwPBwuGl++jNOJZdha76Z36/smAShotkQlh1Nq3DXlU3tWGtKzWL1i0mw==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_availability-time-slots@1.0.172":
+"@wix/auto_sdk_bookings_availability-calendar@1.0.172":
   version "1.0.172"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_availability-time-slots/-/auto_sdk_bookings_availability-time-slots-1.0.172.tgz"
-  integrity sha512-r1GOS4/agEfsedhO5tTsTjtx4rZ5bYG7+ZaGTS6NPA5WHGJunKXOIQSavLdZFByVtEVDvdLC+Hb/2iKSf2ckyA==
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_availability-calendar/-/auto_sdk_bookings_availability-calendar-1.0.172.tgz#d5f57407529dead8bfaba91f0ed5af3ea9cf8b22"
+  integrity sha512-BR3CR/4qMVv9R9ueYGHFnzg3JTIUMKdv3PP0F32BSY81TWcRq3Q8iiOKxqvPDIOSOaypRVGL9KZsn17fYQvZdw==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_booking-fees@1.0.34":
-  version "1.0.34"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_booking-fees/-/auto_sdk_bookings_booking-fees-1.0.34.tgz"
-  integrity sha512-ZEa5jMuAqBomoeQkLnhoDvK9+oLsIL60A5V4PsSvbUiwjs4wSDHwLmXWBCVRC1jk4Jqikrg0oJg208w3mnv/3g==
+"@wix/auto_sdk_bookings_availability-time-slots@1.0.188":
+  version "1.0.188"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_availability-time-slots/-/auto_sdk_bookings_availability-time-slots-1.0.188.tgz#2c4cfe63a94ed21be7f203e4edc401871fc3bee8"
+  integrity sha512-y6wUR0/AVzbDVG0IGs9iC81mnDFgGgIj6oehlOBdmxkGBbJnsqMjYM5I3RXokFITiIdCaCIkw5XPeWKbNecBwg==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_booking-policies@1.0.52":
-  version "1.0.52"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_booking-policies/-/auto_sdk_bookings_booking-policies-1.0.52.tgz"
-  integrity sha512-1CkdzPaKQAL+kn4dAJMlmxOHAFXan3TsSo4AQ+Lzbnz+nuXRTpHjzSQiDVlkj8dhlbpUOqQeigLP8X3TaQGCmA==
+"@wix/auto_sdk_bookings_booking-fees@1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_booking-fees/-/auto_sdk_bookings_booking-fees-1.0.38.tgz#8c03325c9e50c6be369f4f0922120187a3b8f198"
+  integrity sha512-yv4vjzgG0CSfJ0SdxpH5N2jwzP7xzNEkmMaoJtdIzek6xSx+1IaQRuIPdZJkb1lJB9ZUeatcqCdeShYB8v2BAQ==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_booking-policy-snapshots@1.0.30":
-  version "1.0.30"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_booking-policy-snapshots/-/auto_sdk_bookings_booking-policy-snapshots-1.0.30.tgz"
-  integrity sha512-Irksf5czegYIpvLAJghQxejL3SH0/I3v4shZ3ydRV7nrgbDrs95SK0N7+ljfCkri8cA9VFbOHkWKgufJGLrCBQ==
+"@wix/auto_sdk_bookings_booking-policies@1.0.79":
+  version "1.0.79"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_booking-policies/-/auto_sdk_bookings_booking-policies-1.0.79.tgz#3c83ef1056714e1551e1c38a8924675c97629e8a"
+  integrity sha512-ZdCxwQBTjvMJX5z/Gt+ycRYVYPTkq61IYx1UkJOea/revKXGdZDmFlf9x1l1zXPZ4sulrXSHNlbM0t5mesS+og==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_bookings@1.0.55":
-  version "1.0.55"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_bookings/-/auto_sdk_bookings_bookings-1.0.55.tgz"
-  integrity sha512-zj+O4hOk07HtIR4mAR19U3rahK6ojDEO0gIdeGNeq/xIaOda1J0fOtyKiXx1xu3lQE/dWMvrka8onqBpIRn8Fw==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
-
-"@wix/auto_sdk_bookings_categories-v-2@1.0.24":
-  version "1.0.24"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_categories-v-2/-/auto_sdk_bookings_categories-v-2-1.0.24.tgz"
-  integrity sha512-FMtf0pRoIsbA853wMAAxoa25f4mQ7X8EzY0PuP/m2zGJ0ZZY+19qcYZ9BMuUe+FNf8gVojqj6FsNtIYPrCmoww==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
-
-"@wix/auto_sdk_bookings_categories@1.0.33":
-  version "1.0.33"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_categories/-/auto_sdk_bookings_categories-1.0.33.tgz"
-  integrity sha512-zu0K8VTsUPBedIXEdeX2ZfS6LKDvRXgKf73FAulLXmhHot0xBNsMsBxaCzGVaTZ2O69Rsp3O7duAwmzus/C3bw==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
-
-"@wix/auto_sdk_bookings_event-time-slots@1.0.46":
-  version "1.0.46"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_event-time-slots/-/auto_sdk_bookings_event-time-slots-1.0.46.tgz"
-  integrity sha512-mk4sg+UJ3v9bq2RqBalICr2ZHMqo9HYjvCJ1m05IrB3VXzS+4gpTcUin4C8KK/WJMPHmplGsu3jOJgkP55vcUg==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
-
-"@wix/auto_sdk_bookings_extended-bookings@1.0.48":
-  version "1.0.48"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_extended-bookings/-/auto_sdk_bookings_extended-bookings-1.0.48.tgz"
-  integrity sha512-rppmRGFZoX662oywb8rupH4PSa0nAVyFOk6eCxZu7AslbL66sVDiSjQ33AShIg4z5d9OTvLmO9k4lsnDdfip9Q==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
-
-"@wix/auto_sdk_bookings_external-calendars@1.0.35":
+"@wix/auto_sdk_bookings_booking-policy-snapshots@1.0.35":
   version "1.0.35"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_external-calendars/-/auto_sdk_bookings_external-calendars-1.0.35.tgz"
-  integrity sha512-WaU/pGkK1prL8A4SXqphon5X6tMzcfM7rzrv+BOVs5nK8rvOhuAZoCrzYMnEYFLZByGVnDb6eFYq4quYG1Cv8w==
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_booking-policy-snapshots/-/auto_sdk_bookings_booking-policy-snapshots-1.0.35.tgz#e1404b7c3de2a45e6c0b52d703b960f5e527f12e"
+  integrity sha512-0BFPxkSbjGv4HrGe2H46QoIDPJI0X55LF3bTKmxtI5MW4Rpjg3DcWIS9fL06E6YNjjTahNRliEvtutnOYcQTRQ==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_multi-service-availability-time-slots@1.0.172":
-  version "1.0.172"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_multi-service-availability-time-slots/-/auto_sdk_bookings_multi-service-availability-time-slots-1.0.172.tgz"
-  integrity sha512-ubQvaR0EQmTHH4Gm00fbmVMTvXCvlWAPgjENUpYOLp4WMI6eQ+F6PCHeLo61Ir7dIbJGdveX0Vrnv/aaYfB3Xg==
+"@wix/auto_sdk_bookings_bookings@1.0.81":
+  version "1.0.81"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_bookings/-/auto_sdk_bookings_bookings-1.0.81.tgz#9b7de50e73fb4dc39949748dcd8616992ee50c65"
+  integrity sha512-W7qyVLa3h5DaYk00r9EU0xEJpJ4yVgB2OckYoVqoB5pWmPtHunuxV0+O/FxE2dF+QunD/p4IL5QeTNIQy5puMQ==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_pricing@1.0.40":
-  version "1.0.40"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_pricing/-/auto_sdk_bookings_pricing-1.0.40.tgz"
-  integrity sha512-x4lSAe6gYtRZHxeRu0rcARJECpC2qfzo1zX+GlknO5BtITw6QWc4wERWIySSA4elhmZ1BRCv/QKxG6PvrGiFGA==
+"@wix/auto_sdk_bookings_categories-v-2@1.0.31":
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_categories-v-2/-/auto_sdk_bookings_categories-v-2-1.0.31.tgz#b9f032d0596d148fe12fd4354a0b027da8abed60"
+  integrity sha512-38ojMyK7P7D3hoeM5xeQ5GgbrR2fjaR60i78dmh3N2dsRgA/bgNj46upTAMdmE1WTfMJoBGgoLUOKmsvWNXjow==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_resource-types@1.0.40":
-  version "1.0.40"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_resource-types/-/auto_sdk_bookings_resource-types-1.0.40.tgz"
-  integrity sha512-sYlNKIA4Bu+DJfpwDYKHmmp6dBt5rk97RSrc58IRC8VQzMzlOy2ex7fgJeoRL0qcNGqHM1x4oQ/NsL2QNom2jA==
+"@wix/auto_sdk_bookings_categories@1.0.39":
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_categories/-/auto_sdk_bookings_categories-1.0.39.tgz#97b3507ac53ee5b8edd8652b4620d2f225657c64"
+  integrity sha512-JYFcarZfVgGrGLOaA99efIMw8fGz2fHjf1x8nFajLOwKkHWCPymLbKApOy7+Ae88J8wfS+5KhyejxHBD3E4DhA==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_resources@1.0.44":
-  version "1.0.44"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_resources/-/auto_sdk_bookings_resources-1.0.44.tgz"
-  integrity sha512-JDBoIkS/6OMIIyx8AIT9WH9xvUvZxqQ+yOrMATf70xnB1rQlLDoRNXwj34FgRZ+3HcGi7MXduBDI0Aa3MQ4JRQ==
+"@wix/auto_sdk_bookings_event-time-slots@1.0.62":
+  version "1.0.62"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_event-time-slots/-/auto_sdk_bookings_event-time-slots-1.0.62.tgz#04d12b58752a6089fb781cc15f3a8292fcf0d704"
+  integrity sha512-rpBUDfqc20wxd9fta4KtMOTZlmeP3ZnaBWQ60N7tbKikLYsFRIG69H7uegSnpM6zVsyNcaPQqW8/x/oIPB00qg==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_service-options-and-variants@1.0.41":
+"@wix/auto_sdk_bookings_extended-bookings@1.0.61":
+  version "1.0.61"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_extended-bookings/-/auto_sdk_bookings_extended-bookings-1.0.61.tgz#90aa61060b1c068d37b106f983c7429f2dbe6e34"
+  integrity sha512-PSDOAfheNAiobkbEVf4o3vm5KV8olYASLkCRoVLPLMKoBKWyoqFTGVZo8qVjx9Qmq4SGAtKM1pLlwzUtBB95RQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_external-calendars@1.0.41":
   version "1.0.41"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_service-options-and-variants/-/auto_sdk_bookings_service-options-and-variants-1.0.41.tgz"
-  integrity sha512-cuSyYiCTR+L9+c0+C2kI+xh2FLAUFQht1Fv/dDyxZJfG9o5mxiLiB9N/KM3fdNbG6yiIa9ZEeFnqvMGISNiYfg==
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_external-calendars/-/auto_sdk_bookings_external-calendars-1.0.41.tgz#f382b738385df24fe750a02bab15d781232c5875"
+  integrity sha512-1bs6Q/ZQf53H991xx5jh+eCCrkLJ2TCo8xs8jTe2HcJawkTCEd8dKRa4OB3gWWENim81b0LpWy+XGP+h3NxR0A==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_services@1.0.93":
-  version "1.0.93"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_services/-/auto_sdk_bookings_services-1.0.93.tgz"
-  integrity sha512-Ujnp+g/PiqXDLQTgIf37MmVRsdO+bc+Knud9ymZcxxR39P+7V3BtJl0BQSnqhMImDdF1EoLbUMyjFecFjmse+Q==
+"@wix/auto_sdk_bookings_multi-service-availability-time-slots@1.0.188":
+  version "1.0.188"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_multi-service-availability-time-slots/-/auto_sdk_bookings_multi-service-availability-time-slots-1.0.188.tgz#915f4b89f520c20b522ea5fd924a759d6a251911"
+  integrity sha512-WWvM/fyiFC0Kdxp5QG9Ahv0P3rVLKJhQZaUJGjDWI4g2k5r8nqyavu58OZKOE+usVFdeD2TIXEaXu7mo8zprtg==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/auto_sdk_bookings_staff-members@1.0.48":
-  version "1.0.48"
-  resolved "https://registry.npmjs.org/@wix/auto_sdk_bookings_staff-members/-/auto_sdk_bookings_staff-members-1.0.48.tgz"
-  integrity sha512-RM+AMVpGJ1z2Z6D4XKKny4EDUYcHtZ5O9/yXsaUTY47tQIKYfQoSZQKGyZgVqhi/8/IkoxXNJxD+Ryz5Jw1cMQ==
+"@wix/auto_sdk_bookings_pricing@1.0.53":
+  version "1.0.53"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_pricing/-/auto_sdk_bookings_pricing-1.0.53.tgz#6523a9ac3508c56b157e8e2f292507202039f6db"
+  integrity sha512-42m2xc07Hihx+YNx1sYekczwi/IbbC+mipe+T3f0qdWodcLSLFufEugAFrhreum+1TluYX+CqkOPlxcNmT1mJg==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_resource-types@1.0.49":
+  version "1.0.49"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_resource-types/-/auto_sdk_bookings_resource-types-1.0.49.tgz#2cf6c9d42ee563b630602a41dce5c69dad965a25"
+  integrity sha512-Dp0uldoLV5culbZlaepLeZW374QG1393MdH1EirHV7ehPwUTQNOWFdQtkuL93MbsPeV+BxWpOTotap81yEk+AA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_resources@1.0.56":
+  version "1.0.56"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_resources/-/auto_sdk_bookings_resources-1.0.56.tgz#c044e69c189468a4230e2a6df7458248433ae533"
+  integrity sha512-5cjlt1UHSCfeozxAClk3iZAGoW+u1Uxg+CPzi6bG3AxsMsXJHbS42/GRutwDz2b7FIXRkY2AtEsw4r0QU/zuAg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_service-options-and-variants@1.0.53":
+  version "1.0.53"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_service-options-and-variants/-/auto_sdk_bookings_service-options-and-variants-1.0.53.tgz#c7b1a2c02f8788fab8c81098d707ae89529bb3a2"
+  integrity sha512-hx2Ysd8LVEAGck1re2cR5Qxto+SRaL3yLEBfOuwId9SD+JnKeglpFSLEPJX3EVOjDxDcdB9fOGJjOneGhpBIyw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_services@1.0.149":
+  version "1.0.149"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_services/-/auto_sdk_bookings_services-1.0.149.tgz#de6669908f36b932921d22da734e6e37b4c13101"
+  integrity sha512-Ihv1HBDbsocjuI7Ju+IDBP4GbX7VZhrZZ6Rtdes0h+ebzWGJlAc865OvN/fEjHo3XEEoakYanz6n2sCwPp3NXA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
+
+"@wix/auto_sdk_bookings_staff-members@1.0.67":
+  version "1.0.67"
+  resolved "https://registry.yarnpkg.com/@wix/auto_sdk_bookings_staff-members/-/auto_sdk_bookings_staff-members-1.0.67.tgz#3e5c1748d6afc79348d11aabfea849f690e9a1cc"
+  integrity sha512-eHhqG13Hqa/mQQYeCZIppuuEX5r1DlCGK4BBR41Wg8oK2B5F9A7qVpiKzYudnPLkVHJ6pGPSXQk3jHryVqGkow==
+  dependencies:
+    "@wix/sdk-runtime" "^0.5.0"
     "@wix/sdk-types" "^1.13.35"
 
 "@wix/auto_sdk_identity_authentication@1.0.25":
@@ -665,39 +868,41 @@
     "@wix/sdk-runtime" "^0.3.55"
     "@wix/sdk-types" "^1.13.35"
 
-"@wix/bookings_app-extensions@1.0.85":
-  version "1.0.85"
-  resolved "https://registry.npmjs.org/@wix/bookings_app-extensions/-/bookings_app-extensions-1.0.85.tgz"
-  integrity sha512-8By5gTJ7dLx0Wq696ehZyKK2G6E3wV8R7AjpEU0gRbhOwCBm59BTDqIftWRQQDCoUn/z2ia8Qm06iaoOV/r5Ig==
+"@wix/bookings@^1.0.122", "@wix/bookings@^1.0.136":
+  version "1.0.1116"
+  resolved "https://registry.yarnpkg.com/@wix/bookings/-/bookings-1.0.1116.tgz#c5d9688dac45bdcd0bba703cc82c0ec093a35460"
+  integrity sha512-Wx50PEIrGNg//QM8i0Z47CXloC9txK3xuhgcHElHEBglCrXcS5Y9Ejpba/1opSKjtcJ674KQgK6cos7XuEKYmw==
   dependencies:
-    "@wix/sdk-runtime" "^0.3.55"
-    "@wix/sdk-types" "^1.13.35"
+    "@wix/auto_sdk_bookings_add-ons" "1.0.5"
+    "@wix/auto_sdk_bookings_attendance" "1.0.39"
+    "@wix/auto_sdk_bookings_availability-calendar" "1.0.172"
+    "@wix/auto_sdk_bookings_availability-time-slots" "1.0.188"
+    "@wix/auto_sdk_bookings_booking-fees" "1.0.38"
+    "@wix/auto_sdk_bookings_booking-policies" "1.0.79"
+    "@wix/auto_sdk_bookings_booking-policy-snapshots" "1.0.35"
+    "@wix/auto_sdk_bookings_bookings" "1.0.81"
+    "@wix/auto_sdk_bookings_categories" "1.0.39"
+    "@wix/auto_sdk_bookings_categories-v-2" "1.0.31"
+    "@wix/auto_sdk_bookings_event-time-slots" "1.0.62"
+    "@wix/auto_sdk_bookings_extended-bookings" "1.0.61"
+    "@wix/auto_sdk_bookings_external-calendars" "1.0.41"
+    "@wix/auto_sdk_bookings_multi-service-availability-time-slots" "1.0.188"
+    "@wix/auto_sdk_bookings_pricing" "1.0.53"
+    "@wix/auto_sdk_bookings_resource-types" "1.0.49"
+    "@wix/auto_sdk_bookings_resources" "1.0.56"
+    "@wix/auto_sdk_bookings_service-options-and-variants" "1.0.53"
+    "@wix/auto_sdk_bookings_services" "1.0.149"
+    "@wix/auto_sdk_bookings_staff-members" "1.0.67"
+    "@wix/bookings_app-extensions" "1.0.89"
+    "@wix/headless-bookings" "0.0.2"
 
-"@wix/bookings@^1.0.136":
-  version "1.0.977"
-  resolved "https://registry.npmjs.org/@wix/bookings/-/bookings-1.0.977.tgz"
-  integrity sha512-MKO1xM2uGbzNKG41r/xzitemtUgWGk0dhdZit1pv3WHmXXSN6QQFlkfqDl3s2GYlM7AzBihWAU8JTrw70NC4ag==
+"@wix/bookings_app-extensions@1.0.89":
+  version "1.0.89"
+  resolved "https://registry.yarnpkg.com/@wix/bookings_app-extensions/-/bookings_app-extensions-1.0.89.tgz#4371960a4be2a35bdda5f98426cffd67c4a8c690"
+  integrity sha512-iZ3i5z57tUeJ33p+O2t5PMdCd78c7CSiFK6AX6M4oRN1bUfXc9enHL5US1TfxYYlk3NexSXFBE1wyjX81aj8+Q==
   dependencies:
-    "@wix/auto_sdk_bookings_attendance" "1.0.36"
-    "@wix/auto_sdk_bookings_availability-calendar" "1.0.166"
-    "@wix/auto_sdk_bookings_availability-time-slots" "1.0.172"
-    "@wix/auto_sdk_bookings_booking-fees" "1.0.34"
-    "@wix/auto_sdk_bookings_booking-policies" "1.0.52"
-    "@wix/auto_sdk_bookings_booking-policy-snapshots" "1.0.30"
-    "@wix/auto_sdk_bookings_bookings" "1.0.55"
-    "@wix/auto_sdk_bookings_categories" "1.0.33"
-    "@wix/auto_sdk_bookings_categories-v-2" "1.0.24"
-    "@wix/auto_sdk_bookings_event-time-slots" "1.0.46"
-    "@wix/auto_sdk_bookings_extended-bookings" "1.0.48"
-    "@wix/auto_sdk_bookings_external-calendars" "1.0.35"
-    "@wix/auto_sdk_bookings_multi-service-availability-time-slots" "1.0.172"
-    "@wix/auto_sdk_bookings_pricing" "1.0.40"
-    "@wix/auto_sdk_bookings_resource-types" "1.0.40"
-    "@wix/auto_sdk_bookings_resources" "1.0.44"
-    "@wix/auto_sdk_bookings_service-options-and-variants" "1.0.41"
-    "@wix/auto_sdk_bookings_services" "1.0.93"
-    "@wix/auto_sdk_bookings_staff-members" "1.0.48"
-    "@wix/bookings_app-extensions" "1.0.85"
+    "@wix/sdk-runtime" "^0.5.0"
+    "@wix/sdk-types" "^1.13.35"
 
 "@wix/error-handler-types@^1.16.0":
   version "1.16.0"
@@ -705,6 +910,42 @@
   integrity sha512-XiB+aHc/sCoc88KauUPADz1/8IlzguIdf/NofNfKjmXHSjkgXKLV0KL/qEQE4VJBDWGkbk08QhaBxR81tRuaKg==
   dependencies:
     "@babel/runtime" "^7.28.2"
+
+"@wix/error-handler-types@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@wix/error-handler-types/-/error-handler-types-1.19.0.tgz#e183019a812ea52e7f2792149f2979113cdba094"
+  integrity sha512-3z9eURV+VfhNp7tQ7FLOzjbkRvxRJt8bPkq0F9qrGj3/p6VUHB82PStdhPQgJRbqzYrgeiMKu1dQLN/9RXXq1g==
+  dependencies:
+    "@babel/runtime" "^7.28.2"
+
+"@wix/headless-bookings@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@wix/headless-bookings/-/headless-bookings-0.0.2.tgz#9b8dc3f06fc6ce15b38271d961a71873032d63d6"
+  integrity sha512-pUi6Gi7TYZuEukKvVvpkyhYCBL2zM2lUwLlZ4YAOFEtnvjZXMI1uFuA5Imjdx0welc7yJitHUg6gQ+bRM8nh9A==
+  dependencies:
+    "@wix/bookings" "^1.0.122"
+    "@wix/headless-media" "0.0.13"
+    "@wix/headless-utils" "0.0.3"
+    "@wix/services-definitions" "^0.1.4"
+    "@wix/services-manager-react" "^0.1.26"
+    react "^18.2.0"
+
+"@wix/headless-media@0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@wix/headless-media/-/headless-media-0.0.13.tgz#f992e617a2e452b0f8c072a7c3d2f5644b0c1eeb"
+  integrity sha512-3KGTJ5zMh6m0QuwC4MesLcfdYdO6Ldwa7bRc1LhZDwxv4UcVx956izJlFwucjnEcThyUv0ZCuZGF7F44373TgQ==
+  dependencies:
+    "@wix/sdk" "^1.17.1"
+    "@wix/services-definitions" "^0.1.4"
+    "@wix/services-manager-react" "^0.1.26"
+
+"@wix/headless-utils@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@wix/headless-utils/-/headless-utils-0.0.3.tgz#8b61acd4b5ec902301cc84fd1a21221028a9c15c"
+  integrity sha512-rrkOpNjl6axItR3QdjIYt5/aIbkQCYr+jPkopUk6zSYQq8F+5FYWZNGSYdmXd2nd+r50TT4GfY9n8pSm5ezDYg==
+  dependencies:
+    "@radix-ui/react-slot" "^1.2.3"
+    react "^18.0.0"
 
 "@wix/identity@^1.0.104":
   version "1.0.155"
@@ -720,6 +961,14 @@
   version "1.111.0"
   resolved "https://registry.npmjs.org/@wix/image-kit/-/image-kit-1.111.0.tgz"
   integrity sha512-ysi/7WlDYHmaOemLUWEnwh2nNt0c2femdKjdTmdZl8IOPnYN87ze3HTk3a7h7pX1WXjLFMtwe4BrvqfMZu3p8A==
+  dependencies:
+    "@babel/runtime" "^7.26.0"
+    tslib "^2.8.1"
+
+"@wix/image-kit@^1.113.0":
+  version "1.113.0"
+  resolved "https://registry.yarnpkg.com/@wix/image-kit/-/image-kit-1.113.0.tgz#02b4bb6c16beba450625fb8f255ba1e67774d7ce"
+  integrity sha512-5hrHA8+peRjxp9uSgeyQCvxArWN+x0T17vhrQtY6KzoqrCIUMJtdxOkNfoXjL7JpMrIoB/5luyRR0d5KfB7tmA==
   dependencies:
     "@babel/runtime" "^7.26.0"
     tslib "^2.8.1"
@@ -771,13 +1020,43 @@
   resolved "https://registry.npmjs.org/@wix/sdk-context/-/sdk-context-0.0.1.tgz"
   integrity sha512-ziSzrceUC0KFn4IJIVBn1cXXKrZ49ZKG5tQ6fl+TpontyUw5p/Z4VofFUUsnqNl9JYCpYNTzIXpzwok93Vrl8A==
 
-"@wix/sdk-runtime@^0.3.55", "@wix/sdk-runtime@0.3.59":
+"@wix/sdk-react-context@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@wix/sdk-react-context/-/sdk-react-context-0.0.3.tgz#1b1bcbf081a628f1b9c987a39ae058251ecb9fc0"
+  integrity sha512-qNULv5LaQgOjqVdddsDIhVL5e/wbFOSSc9BhDjFfsUCfWyd/wpOP47xqythGChIH0R5da4T3BurXPURFqg1TgA==
+
+"@wix/sdk-runtime@0.3.59", "@wix/sdk-runtime@^0.3.55":
   version "0.3.59"
   resolved "https://registry.npmjs.org/@wix/sdk-runtime/-/sdk-runtime-0.3.59.tgz"
   integrity sha512-o57qT/R9j6hCdArrIa6SqxT6Fw0de4QZMjbfoGXTTYaeB0YZ7ZQ3/f5LUs6t/dzh7Ag0Z1k3Ql1xOOyUkIN5Zg==
   dependencies:
     "@wix/sdk-context" "0.0.1"
     "@wix/sdk-types" "^1.13.38"
+
+"@wix/sdk-runtime@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@wix/sdk-runtime/-/sdk-runtime-0.4.0.tgz#a90823f6a5a9a41dc49f634f578fd9f905de82eb"
+  integrity sha512-kFSeyhKTJ5AY6+kXMatk7HY0ZmIuERNrWuowmpLX/XxNWNvboBL/5fclZMTQBKX47wDKJWqEDOx3lg2BXYb7bA==
+  dependencies:
+    "@wix/sdk-context" "0.0.1"
+    "@wix/sdk-types" "1.14.0"
+
+"@wix/sdk-runtime@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@wix/sdk-runtime/-/sdk-runtime-0.5.0.tgz#45ffc3d7fd71c45aa46a294b30cd9b1ae05f834e"
+  integrity sha512-WFzsQ8NhFNIPPXXeQZ2BaWCVRuvTadlcIQ2NofZnC5yEpWohzZJWoUWD9l+pxKFjVICQFFCuj7nZMF8RapVitg==
+  dependencies:
+    "@wix/sdk-context" "0.0.1"
+    "@wix/sdk-types" "1.14.0"
+
+"@wix/sdk-types@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@wix/sdk-types/-/sdk-types-1.14.0.tgz#54f0516da2aeaa531609b4b5289b2e047579a75a"
+  integrity sha512-1ae6emTMiiYr+cpupnmHS05WMU04vP12DlW5cII3pjau3iLhmfo6KjA++ZRSnmOJc0sNYI5iL7sMVrJFy46hPA==
+  dependencies:
+    "@wix/error-handler-types" "^1.19.0"
+    "@wix/monitoring-types" "^0.12.0"
+    type-fest "^4.41.0"
 
 "@wix/sdk-types@^1.13.35", "@wix/sdk-types@^1.13.38":
   version "1.13.38"
@@ -787,6 +1066,22 @@
     "@wix/error-handler-types" "^1.16.0"
     "@wix/monitoring-types" "^0.12.0"
     type-fest "^4.41.0"
+
+"@wix/sdk@^1.17.1":
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/@wix/sdk/-/sdk-1.17.1.tgz#34c9e99077411e14995711218536f496be668298"
+  integrity sha512-h4B0SjywWJNiNw7kZ7zd71nWslq/S3n+Bi1L6drPXaGkiXuHBS4T88lEtM8xy3+ls1UuWeB6gs278/CARn5nwQ==
+  dependencies:
+    "@wix/identity" "^1.0.104"
+    "@wix/image-kit" "^1.113.0"
+    "@wix/redirects" "^1.0.70"
+    "@wix/sdk-context" "0.0.1"
+    "@wix/sdk-runtime" "0.4.0"
+    "@wix/sdk-types" "1.14.0"
+    jose "^5.10.0"
+    type-fest "^4.41.0"
+  optionalDependencies:
+    graphql "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
 
 "@wix/sdk@^1.5.0":
   version "1.15.26"
@@ -804,12 +1099,38 @@
   optionalDependencies:
     graphql "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
 
+"@wix/services-definitions@^0.1.4", "@wix/services-definitions@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@wix/services-definitions/-/services-definitions-0.1.5.tgz#b455dffd31c0fb2be48a5bdb21e93aad6d628b1c"
+  integrity sha512-T5uxfgs1wPF+/NzBHcvS0CIEKDyq1covqRr7GUrDsVEqh97tOYs+wA6zr/cDNTxn77WDYCmUt2iPyn0wYtDj1Q==
+  dependencies:
+    type-fest "^4.41.0"
+
+"@wix/services-manager-react@^0.1.26":
+  version "0.1.27"
+  resolved "https://registry.yarnpkg.com/@wix/services-manager-react/-/services-manager-react-0.1.27.tgz#42c8abb9f0fbbfdf0f415d867ae78ae984509113"
+  integrity sha512-NUWZXiwvhQt1CYs0KfPP1KoJj8XQZke7xfumkHCzn95yaTlyCIOHsPEjRijJ/A835pIDMU+wA/cGS0zmTC1UTg==
+  dependencies:
+    "@preact/signals-react" "^3.2.1"
+    "@wix/sdk-react-context" "0.0.3"
+    "@wix/services-definitions" "^0.1.5"
+    "@wix/services-manager" "0.2.21"
+
+"@wix/services-manager@0.2.21":
+  version "0.2.21"
+  resolved "https://registry.yarnpkg.com/@wix/services-manager/-/services-manager-0.2.21.tgz#fc16297b72c51ac3d5739c68042f63bf846ce784"
+  integrity sha512-gImN/WpsoWdYv6lNbOUXEhuT9T0Rs9dD4OjaHsWji8xv4/vlMYNzcG5kVIFiNpZmTSwb8qLrqQ1fzNkCq6SmHA==
+  dependencies:
+    "@preact/signals-core" "^1.11.0"
+    "@wix/sdk-context" "0.0.1"
+    "@wix/services-definitions" "^0.1.5"
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
-"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8.9.0:
+acorn@^8.9.0:
   version "8.15.0"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz"
   integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
@@ -1048,7 +1369,7 @@ braces@^3.0.3, braces@~3.0.2:
   dependencies:
     fill-range "^7.1.1"
 
-browserslist@^4.24.4, "browserslist@>= 4.21.0":
+browserslist@^4.24.4:
   version "4.25.1"
   resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.25.1.tgz"
   integrity sha512-KGj0KoOMXLpSNkkEI6Z6mShmQy0bc1I+T7K9N81k4WWMrfz+6fQ6es80B/YLAeRoKvjYE1YSHHOW1qe9xIVzHw==
@@ -1217,7 +1538,7 @@ data-view-byte-offset@^1.0.1:
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
 
-"date-fns@^2.28.0 || ^3.0.0", date-fns@^2.29.3:
+date-fns@^2.29.3:
   version "2.30.0"
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz"
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
@@ -1515,7 +1836,7 @@ eslint-module-utils@^2.12.1:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-import@*, eslint-plugin-import@^2.28.1:
+eslint-plugin-import@^2.28.1:
   version "2.32.0"
   resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.32.0.tgz"
   integrity sha512-whOE1HFo/qJDyX4SnXzP4N6zOWn79WhnCUY/iDR0mPfQZO8wcYE4JClzI2oZrhBnnMUCBCHZhO6VQyoBU95mZA==
@@ -1610,7 +1931,7 @@ eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4.3:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@*, "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.23.0 || ^8.0.0", eslint@^8.33.0, eslint@>=7.0.0, eslint@>=7.28.0:
+eslint@^8.33.0:
   version "8.57.1"
   resolved "https://registry.npmjs.org/eslint/-/eslint-8.57.1.tgz"
   integrity sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==
@@ -1810,6 +2131,16 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fsevents@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
+
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -1872,7 +2203,7 @@ get-tsconfig@^4.10.0:
   dependencies:
     resolve-pkg-maps "^1.0.0"
 
-glob-parent@^5.1.2:
+glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
   integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
@@ -1886,17 +2217,22 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
-glob-parent@~5.1.2:
-  version "5.1.2"
-  resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
-  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
-  dependencies:
-    is-glob "^4.0.1"
-
 glob-to-regexp@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
+
+glob@7.1.7, glob@^7.1.3:
+  version "7.1.7"
+  resolved "https://registry.npmjs.org/glob/-/glob-7.1.7.tgz"
+  integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
 
 glob@^10.3.10:
   version "10.4.5"
@@ -1909,18 +2245,6 @@ glob@^10.3.10:
     minipass "^7.1.2"
     package-json-from-dist "^1.0.0"
     path-scurry "^1.11.1"
-
-glob@^7.1.3, glob@7.1.7:
-  version "7.1.7"
-  resolved "https://registry.npmjs.org/glob/-/glob-7.1.7.tgz"
-  integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.0.4"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
 
 globals@^13.19.0:
   version "13.24.0"
@@ -2437,6 +2761,13 @@ mini-svg-data-uri@^1.4.3:
   resolved "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz"
   integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
 
+minimatch@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.3.tgz"
+  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
+  dependencies:
+    brace-expansion "^2.0.1"
+
 minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
@@ -2448,13 +2779,6 @@ minimatch@^9.0.4:
   version "9.0.5"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.5.tgz"
   integrity sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==
-  dependencies:
-    brace-expansion "^2.0.1"
-
-minimatch@9.0.3:
-  version "9.0.3"
-  resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.3.tgz"
-  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -2703,7 +3027,7 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-"picomatch@^3 || ^4", picomatch@^4.0.2:
+picomatch@^4.0.2:
   version "4.0.3"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-4.0.3.tgz"
   integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
@@ -2781,15 +3105,6 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.0.0, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.4.21, postcss@^8.4.47, postcss@>=8.0.9:
-  version "8.5.6"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.5.6.tgz"
-  integrity sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==
-  dependencies:
-    nanoid "^3.3.11"
-    picocolors "^1.1.1"
-    source-map-js "^1.2.1"
-
 postcss@8.4.31:
   version "8.4.31"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz"
@@ -2798,6 +3113,15 @@ postcss@8.4.31:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+postcss@^8.4.21, postcss@^8.4.47:
+  version "8.5.6"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.5.6.tgz"
+  integrity sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==
+  dependencies:
+    nanoid "^3.3.11"
+    picocolors "^1.1.1"
+    source-map-js "^1.2.1"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -2811,7 +3135,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.8.4, prettier@>=2.0.0:
+prettier@^2.8.4:
   version "2.8.8"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.8.tgz"
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
@@ -2840,7 +3164,7 @@ react-day-picker@^8.5.1:
   resolved "https://registry.npmjs.org/react-day-picker/-/react-day-picker-8.10.1.tgz"
   integrity sha512-TMx7fNbhLk15eqcMt+7Z7S2KF7mfTId/XJDjKE8f+IUcFn0l08/kI4FiYTL/0yuOLmEcbR4Fwe3GJf/NiiMnPA==
 
-"react-dom@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", react-dom@^18, react-dom@^18.2.0, react-dom@>=16.8.0, react-dom@18.2.0:
+react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -2867,10 +3191,17 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@*, "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", react@^18, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16.8.0, react@18.2.0:
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  dependencies:
+    loose-envify "^1.1.0"
+
+react@^18.0.0:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -3290,7 +3621,7 @@ tailwind-merge@^1.13.2:
   resolved "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-1.14.0.tgz"
   integrity sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==
 
-tailwindcss@^3, tailwindcss@^3.2.6:
+tailwindcss@^3.2.6:
   version "3.4.17"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.17.tgz"
   integrity sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==
@@ -3439,7 +3770,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@>=3.3.1, typescript@>=4.2.0, typescript@4.9.5:
+typescript@4.9.5:
   version "4.9.5"
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
